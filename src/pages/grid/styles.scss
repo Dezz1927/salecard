@@ -1,0 +1,46 @@
+.Grid {
+  width: 100%;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 5fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 30px 20px;
+  align-items: end;
+  justify-content: start;
+
+  @media (max-width: 1000px) {
+    grid-template:
+      "header"
+      "aside"
+      "content"
+      "footer";
+  }
+
+  &, * {
+    border: 1px dashed black;
+  }
+
+  &__header {
+    grid-area: 1 / 1 / 2 / 5;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__aside {
+    grid-area: 2 / 1 / 5 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    grid-area: 2 / 2 / 4 / 5;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__footer {
+    grid-area: 4 / 2 / 5 / 5;
+    width: 100%;
+    height: 100%;
+  }
+}

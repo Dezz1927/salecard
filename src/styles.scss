@@ -1,0 +1,43 @@
+@import "./header/style.css";
+@import "./menu/styles.scss";
+@import "./popular/index.scss";
+@import "./new/styles.scss";
+// @import "./banner/banner.scss";
+
+:root {
+  font-family: Roboto, sans-serif;
+  font-style: 15px;
+  font-weight: 400;
+}
+
+* {
+  &, &:before, &:after {
+    transition-property: none;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-delay: 0s;
+
+    &:hover {
+      transition-timing-function: ease-in;
+    }
+  }
+}
+
+main {
+  color: black;
+}
+
+.example {
+  &Parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &Child {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+  }
+}

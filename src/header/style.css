@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.Top_header {
+  width: 1600px;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+  background-color: #4C2481;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.Logo_Wrapper {
+  width: 225.52px;
+  height: 68.82px;
+  left: 150px;
+  top: 31.61px;
+  margin-right: 35px;
+  margin-left: 150px;
+  margin-top: -20px;
+}
+
+.Contacts_Wrapper {
+  margin-right: 40px;
+  left: 25.69%;
+  right: 62.81%;
+  top: 38%;
+  bottom: 34%;
+}
+
+.Search {
+  left: 39.81%;
+  right: 28.94%;
+  top: 38%;
+  bottom: 35.33%;
+  margin-right: 30px;
+}
+
+#Search_product {
+  width: 465px;
+  height: 40px;
+}
+
+.btn {
+  background-color: #68D6F4;
+  height: 40px;
+}
+
+.Profile {
+  margin-right: 30px;
+  left: 72.94%;
+  right: 17.5%;
+  top: 42%;
+  bottom: 41.33%;
+}
+
+.Cart {
+  left: 84.38%;
+  right: 9.56%;
+  top: 42%;
+  bottom: 41.33%;
+}
+
+.bottom_header {
+  height: 75px;
+}

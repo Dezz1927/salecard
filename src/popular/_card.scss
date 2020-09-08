@@ -1,0 +1,186 @@
+.popular_cards {
+  display: flex;
+}
+@media (max-width: 670px) {
+  .popular_cards {
+    flex-direction: column;
+  }
+}
+.card {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  margin: 26px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  .card_header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    .card_discount {
+      position: absolute;
+      left: 0;
+      background-color: #fd6d6d;
+      padding: 4px 8px;
+      border-radius: 4px;
+      button {
+        background-color: #fd6d6d;
+        border: none;
+        color: #fff;
+      }
+    }
+    .card_picture img {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .card_checkboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    .card_stars {
+      display: flex;
+      width: 90px;
+
+      .rating_block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        input[type="radio"] {
+          display: none;
+        }
+        .label_rating {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 15px;
+          background: url("./popular/images/star-empty.png") no-repeat 50% 0;
+          cursor: pointer;
+          margin-right: 2, 2px;
+        }
+        .label_rating:hover,
+        .label_rating:hover ~ .label_rating,
+        input[type="radio"]:checked ~ .label_rating {
+          background-position: 50% -25px;
+          background: url("./popular/images/star-full.png") no-repeat 50% 0;
+        }
+      }
+
+      .card_checkbox {
+        display: flex;
+
+        .img {
+          width: 15px;
+          height: 15px;
+          display: flex;
+        }
+        .checkbox_text {
+          display: flex;
+          font-family: Helvetica;
+          font-size: 14px;
+          color: #343640;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .card_text {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #2b2d36;
+    letter-spacing: 0;
+    margin: 20px;
+  }
+  .card_weight {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    .radio_info {
+      display: flex;
+      input[type="radio"] {
+        display: none;
+      }
+
+      .weight_label {
+        float: right;
+        display: block;
+        width: 16px;
+        height: 15px;
+        background: url("./popular/images/print-icon-empty.png") no-repeat 50% 0;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      .weight_label:hover,
+      .weight_label:hover ~ .weight_label,
+      input[type="radio"]:checked ~ .weight_label {
+        background-position: 50% -25px;
+        background: url("./popular/images/print-icon-blue.png") no-repeat 50% 0;
+      }
+    }
+  }
+  .order_menu {
+    display: flex;
+    margin: 20px;
+    .price {
+      display: flex;
+      flex-direction: column;
+      .strikethrough {
+        position: relative;
+        font-size: 40px;
+        font-family: Helvetica;
+        font-size: 16px;
+        color: #dfdfdf;
+        letter-spacing: 0;
+        width: 43px;
+        height: 21px;
+      }
+      .strikethrough:before {
+        border-bottom: 1px solid #fd6d6d;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+      }
+
+      .real_price {
+        font-family: Helvetica;
+        font-size: 18px;
+        color: #fd6d6d;
+        letter-spacing: 0;
+      }
+    }
+    .cart {
+      .cart_button {
+        font-family: Helvetica;
+        font-size: 14px;
+        color: #ffffff;
+        letter-spacing: 0;
+        text-align: center;
+        background-color: #68d6f4;
+        padding: 8px 20px;
+        border-radius: 4px;
+        margin-left: 88px;
+        border: none;
+      }
+      .cart_button:hover {
+        width: 110px;
+        height: 35px;
+        font-family: Helvetica;
+        font-size: 14px;
+        letter-spacing: 0;
+        text-align: center;
+        background: #572f8c;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

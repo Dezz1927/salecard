@@ -1,0 +1,59 @@
+.SearchBar
+  width: 500px
+  height: 40px
+  display: inline-flex
+  background-color: #fff
+  border-radius: 5px
+  position: relative
+
+  @media all and (max-width: 1000px)
+    flex-direction: column
+
+  &__input
+    margin: 0
+    padding: 0 0 0 13px
+    width: 100%
+    border: none
+    background-color: transparent
+    font-size: (14rem / 15)
+    line-height: (40 / 14)
+    color: #2b2d36
+
+    &::-webkit-input-placeholder
+      color: #d6d6d6
+    &::-moz-placeholder
+      color: #d6d6d6
+    &:-ms-input-placeholder
+      color: #d6d6d6
+    &:-moz-placeholder
+      color: #d6d6d6
+
+  &__button
+    margin: 0
+    padding: 0 16px
+    border: none
+    display: flex
+    height: 100%
+    align-items: center
+    background-color: transparent
+    position: absolute
+    right: 0
+    top: 0
+    color: #68d6f4
+    transition-property: color
+
+    &:hover
+      color: #572f8c
+
+    &Title
+      margin-left: 10px
+      font-size: 1rem
+      line-height: 1
+      font-weight: 500
+      position: relative
+      top: 1px
+
+    @media all and (max-width: 1000px)
+      position: static
+
+  &__icon

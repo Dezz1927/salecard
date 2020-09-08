@@ -1,0 +1,36 @@
+$FontsHover: #572F8C;
+html, body {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./menu/imageMenu/background.png);  
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.categoryAnimal:hover {
+    background-image: url(./menu/imageMenu/pattern2.png);
+}
+.imageIcon {
+   height: 32px;
+   margin: 20px;
+}
+.imageText {
+    text-transform: uppercase;
+}
+
+.categoryAnimal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+    height: 75px;
+}

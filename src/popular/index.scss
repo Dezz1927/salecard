@@ -1,0 +1,20 @@
+@import "./_card.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.popular_container {
+  max-width: 1300px;
+  margin: 124px auto;
+  width: 100%;
+}
+.popular_title {
+  margin-left: 152px;
+}
