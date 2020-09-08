@@ -19,7 +19,7 @@
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.20",
     "moment": "^2.24.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
