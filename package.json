@@ -18,7 +18,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.20",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "lodash": "^4.17.15",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
